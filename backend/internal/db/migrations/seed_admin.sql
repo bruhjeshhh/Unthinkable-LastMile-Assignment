@@ -1,0 +1,8 @@
+-- Optional: promote an existing user to admin. Admin accounts aren't created
+-- via the public /api/auth/register endpoint (role is restricted to
+-- customer/agent there) — register a normal account first, then run this:
+--
+--   UPDATE users SET role = 'admin' WHERE email = 'you@example.com';
+--
+-- Everything else (zones, rate cards, pincode mapping) is configured through
+-- the admin UI/API after that, so there is no hardcoded seed data.
